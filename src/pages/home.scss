@@ -1,0 +1,21 @@
+.home{
+            display: flex;
+        flex-direction: column;    
+        align-items: center;
+    img{
+        height: 100px;
+
+    }
+}
+.cards-container{
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   .cards{
+        gap: 55px;
+
+    }
+
+}

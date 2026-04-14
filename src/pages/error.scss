@@ -1,0 +1,8 @@
+$maincolor: #FF6060;
+
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $maincolor;
+}

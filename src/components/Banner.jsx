@@ -1,11 +1,11 @@
-import './banner.scss'
+import "./banner.scss";
 
-const Banner = () => {
+function Banner() {
   return (
     <div className="banner">
-      <h1>🌿 La maison jungle</h1>
+      <p>Chez vous, partout et ailleurs</p>
     </div>
-  )
+  );
 }
 
-export default Banner
+export default Banner;

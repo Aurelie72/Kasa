@@ -1,15 +1,17 @@
-import Banner from './components/Banner'
-import Home from './components/Home'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import AppRouter from './AppRouter';
+
+import '../src/app.scss'
+
+
 function App() {
   return (
     <>
-      <h1>Kasa</h1>
-      <Banner />
-      <Home />
+      <Header />
+      <AppRouter />
+      <Footer />
     </>
   )
 }
-
 export default App
-
-
