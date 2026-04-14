@@ -1,6 +1,8 @@
 import '../pages/about.scss'
 import aboutpicture from '../assets/aboutpicture.jpg'
 
+// Banner est réutilisable ???? 
+
 function About() {
 
   return (

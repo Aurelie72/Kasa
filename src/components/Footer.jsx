@@ -1,6 +1,8 @@
 import './footer.scss'
 import logowhite from '../assets/logowhite.svg'
 
+
+
 const Footer = () => {
   return (
       <div className="footer">
