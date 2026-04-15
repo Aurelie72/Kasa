@@ -10,6 +10,7 @@ import Tags from '../components/Tags.jsx'
 import Equipements from '../components/Equipements.jsx'
 
 import Error from '../pages/Error.jsx'
+import Slideshow from '../components/Slideshow'
 
 function LogementDetails() {
   const { id } = useParams()
@@ -23,7 +24,7 @@ function LogementDetails() {
   return (
     <div className="logement">
       <div>
-        <img src={logement.cover} alt="photo principale du logement" />
+        <Slideshow pictures={logement.pictures} />
       </div>
       <section>
       <div>

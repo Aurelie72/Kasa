@@ -2,8 +2,6 @@ import '../pages/about.scss'
 import aboutpicture from '../assets/aboutpicture.jpg'
 import Collapse from '../components/Collapse'
 
-// Banner est réutilisable ???? 
-
 function About() {
 
   return (

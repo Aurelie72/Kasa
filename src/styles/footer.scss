@@ -3,8 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 209px ;
+  gap: 50px;
+  padding-top: 70px;
 
   p {
+    font-size: 3vh;
     color: white;
   }
 }

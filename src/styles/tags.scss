@@ -1,0 +1,16 @@
+@import "../styles/variables";
+
+.tags{
+    display: inline-block;
+   margin-right: 8px;
+   align-items: center; 
+    
+    button{
+        background-color: $maincolor;
+        font-size: 14px;
+        color :white;
+        border-radius: 10px;
+        padding: 5px;
+        width: 120px;
+    }
+    }

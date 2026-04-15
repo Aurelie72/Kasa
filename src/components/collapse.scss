@@ -1,6 +1,3 @@
-$maincolor: #FF6060;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 .collapse {
   margin-bottom: 10px;
   border-radius: 5px;
@@ -13,7 +10,7 @@ $maincolor: #FF6060;
 
 
 &-title {
-  background: $maincolor;
+  background: red;
   color: white;
   padding: 0 10px;
   display: flex;

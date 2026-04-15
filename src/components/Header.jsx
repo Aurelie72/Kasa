@@ -1,6 +1,6 @@
-import './header.scss'
+import '../styles/header.scss'
 import Navigation from '../components/Navigation'
-import Logo from './LOGO'
+import Logo from '../components/Logo.jsx'
 
 const Header = () => {
   return (
