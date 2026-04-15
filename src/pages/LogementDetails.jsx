@@ -1,7 +1,14 @@
 import { useParams } from 'react-router-dom'
 import '../pages/logementdetails.scss'
 import logements from '../data/logements.json'
+import Collapse from '../components/Collapse'
 
+import fullstar from '../assets/fullstar.svg'
+import emptystar from '../assets/emptystar.svg'
+
+import Tags from '../components/Tags'
+
+import Error from '../pages/Error.jsx'
 
 function LogementDetails() {
   const { id } = useParams()
@@ -9,18 +16,53 @@ function LogementDetails() {
 
     if (!logement) {
   return (
-      <div className="page">
-        <div className="logement-not-found">
-          <h1>Logement non trouvé 🙈</h1>
-          <p>Le logement demandé n'existe pas.</p>
-        </div>
-      </div>)}
+<Error />
+)
+}
   return (
     <div className="logement">
+      <div>
+        <img src={logement.cover} alt="photo principale du logement" />
+      </div>
+      <section>
+      <div>
       <h2>{logement.title}</h2>
       <p>{logement.location}</p>
-      <button>{logement.tags}</button>
-<p>test page logement</p>
+
+      <div className="tags-container">
+        {logement.tags.map((tag) => (
+          <Tags key={tag}   
+            tag={tag}     
+          />
+        ))}
+      </div>
+      </div>
+      <div>
+        <span>
+          <p>{logement.host.name}</p>
+          <img src={logement.host.picture} alt="photo propriétaire" />
+        </span>
+<div>
+  {[...Array(5)].map((_, i) => (
+    <img key={i}
+    src= {i < logement.rating ? fullstar : emptystar} 
+    alt ="staricon"
+    />
+    
+  ))}
+</div>
+      </div>
+      </section>
+      <div>
+  
+            <Collapse title="Description">
+        <p>{logement.description}</p>
+      </Collapse>
+    
+            <Collapse title="Equipement">
+        <p>{logement.equipments}</p>
+      </Collapse>
+         </div>
       </div>
   )
 }
