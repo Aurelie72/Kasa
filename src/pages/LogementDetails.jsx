@@ -6,7 +6,8 @@ import Collapse from '../components/Collapse'
 import fullstar from '../assets/fullstar.svg'
 import emptystar from '../assets/emptystar.svg'
 
-import Tags from '../components/Tags'
+import Tags from '../components/Tags.jsx'
+import Equipements from '../components/Equipements.jsx'
 
 import Error from '../pages/Error.jsx'
 
@@ -32,7 +33,7 @@ function LogementDetails() {
       <div className="tags-container">
         {logement.tags.map((tag) => (
           <Tags key={tag}   
-            tag={tag}     
+          tag={tag}     
           />
         ))}
       </div>
@@ -59,8 +60,17 @@ function LogementDetails() {
         <p>{logement.description}</p>
       </Collapse>
     
-            <Collapse title="Equipement">
-        <p>{logement.equipments}</p>
+            <Collapse title="Equipements">
+              <div className="equipement-container">
+        {logement.equipments.map((equipement) => (
+ 
+          <Equipements key={equipement}   
+            equipement={equipement}     
+          />
+        ))}
+      </div>
+        
+
       </Collapse>
          </div>
       </div>
