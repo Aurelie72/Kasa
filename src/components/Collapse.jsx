@@ -8,7 +8,7 @@ function Collapse({ title, children }) {
 
   return (
     <div className="collapse">
-      <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
+      <div className="collapse-title" onClick={() => setIsOpen(!isOpen)}>
         <h4>{title}</h4>
         <img src={isOpen ? vectorOpen : vectorClose} alt="toggle icon"></img>
       </div>

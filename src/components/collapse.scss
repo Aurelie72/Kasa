@@ -1,41 +1,28 @@
+$maincolor: #FF6060;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.collapse {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden; //sinon border radius ne saffiche pas
+  width: 900px; 
+  font-family: Montserrat, serif;
+   @media (max-width: 950px) {
+           width: 400px;
+        }
 
 
-// .collapse {
-//   margin-bottom: 10px;
-//   border-radius: 5px;
-//   overflow: hidden;
-// }
+&-title {
+  background: $maincolor;
+  color: white;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
 
-// .collapse-header {
-//   background: #ff6060;
-//   color: white;
-//   padding: 10px;
-//   display: flex;
-//   justify-content: space-between;
-//   cursor: pointer;
-// }
-
-// .collapse-content {
-//   background: #f6f6f6;
-//   padding: 10px;
-//   animation: fade 0.3s ease;
-// }
-
-// .arrow {
-//   transition: transform 0.3s;
-// }
-
-// .arrow.open {
-//   transform: rotate(180deg);
-// }
-
-// @keyframes fade {
-//   from {
-//     opacity: 0;
-//     max-height: 0;
-//   }
-//   to {
-//     opacity: 1;
-//     max-height: 200px;
-//   }
-// }
+&-content {
+  background: #f6f6f6;
+  padding: 10px;
+}
+}
