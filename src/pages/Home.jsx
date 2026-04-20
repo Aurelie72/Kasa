@@ -1,8 +1,7 @@
 import Banner from '../components/Banner'
 import Card from '../components/Card'
-import Collapse from '../components/Collapse'
 import logements from '../data/logements.json'
-import './home.scss'
+import '../styles/home.scss'
 
 function Home() {
   return (

@@ -1,4 +1,4 @@
-import './collapse.scss'
+import '../styles/collapse.scss'
 import { useState } from 'react'
 import vectorClose from '../assets/vector-close.svg'
 import vectorOpen from '../assets/vector-open.svg'

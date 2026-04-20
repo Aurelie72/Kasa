@@ -1,4 +1,4 @@
-import '../pages/about.scss'
+import '../styles/about.scss'
 import aboutpicture from '../assets/aboutpicture.jpg'
 import Collapse from '../components/Collapse'
 
@@ -9,6 +9,7 @@ function About() {
         <img 
           src={aboutpicture}
           alt="paysage de montagne" 
+          className="banner"
         />
 <div className='container-collapse'>
       <Collapse title="Fiabilité">

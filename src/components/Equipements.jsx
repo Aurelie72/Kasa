@@ -1,10 +1,9 @@
-import './equipements.scss'
 
 
 const Equipements = ({equipement}) => {
 
   return (
-    <div className="equipement">
+    <div >
         {equipement}
     </div>
   )

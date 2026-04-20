@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./slidehow.scss";
+import "../styles/slidehow.scss";
 
 import arrowback from "../assets/arrow_back.svg";
 import arrownext from "../assets/arrow_next.svg";
@@ -21,7 +21,7 @@ function Slideshow({ pictures }) {
     <div className="slideshow">
       <img src={pictures[index]} alt="logement" className="slide-image" />
 
-      {/* flèches seulement si + d'une image */}
+    
       {length > 1 && (
         <>
           <img
@@ -38,7 +38,7 @@ function Slideshow({ pictures }) {
             onClick={nextSlide}
           />
 
-          {/* compteur */}
+          
           <div className="slide-counter">
             {index + 1} / {length}
           </div>
