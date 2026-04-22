@@ -12,5 +12,15 @@
         border-radius: 10px;
         padding: 5px;
         width: 120px;
+            @media (max-width: 900px) {
+      width: 100px;    // tablette
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      width: auto;     // mobile : s’adapte au texte
+      font-size: 12px;
+      padding: 5px 12px;
+    }
     }
     }
