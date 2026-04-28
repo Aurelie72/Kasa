@@ -6,7 +6,6 @@
   overflow: hidden;
   width: 1000px; 
   padding-bottom: 10px;
-  font-family: "Montserrat", serif;
    @media (max-width: 1039px) {
            width: 700px;
         }
@@ -16,8 +15,6 @@
                @media (max-width: 542px) {
            width: 300px;
         }
-
-
 &-title {
   background: $maincolor;
   color: white;
@@ -45,8 +42,8 @@
 }
 
 .collapse.open .collapse-content {
-  max-height: 500px; // assez grand pour ton contenu
-   padding: 15px; // padding complet uniquement quand ouvert
+  max-height: 500px; 
+   padding: 15px; 
 }
 .collapse-arrow {
   transition: transform 0.3s ease;

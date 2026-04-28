@@ -1,31 +1,3 @@
-// .banner {
-//   background-image: url('../assets/picturehome.png');
-//   background-size: cover;
-//   background-position: center;
-//   height: 223px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 25px;
-//   width: 100%;
-//   opacity: 0.6;
-//   mix-blend-mode: darken; //revoir cours pseudo element ::before ? 
-//   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-//   margin-bottom: 50px;
-
-  
-
-//   p{
-//     color: white;
-//     font-size: 48px;
-//     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-//     @media screen and (max-width: 600px) {
-//       font-size: 30px;
-      
-//     }
-//   }
-// }
-
 .banner {
   position: relative;
   height: 223px;
@@ -44,13 +16,13 @@
     background-image: url('../assets/picturehome.png');
     background-size: cover;
     background-position: center;
-    filter: brightness(0.5); // ⭐ assombrit proprement
+    filter: brightness(0.5); 
     z-index: 1;
   }
 
-  p {
+  h1 {
     position: relative;
-    z-index: 2; // ⭐ passe au-dessus du calque sombre
+    z-index: 2; 
     color: white;
     font-size: 48px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);

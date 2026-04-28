@@ -21,7 +21,6 @@ function Slideshow({ pictures }) {
     <div className="slideshow">
       <img src={pictures[index]} alt="logement" className="slide-image" />
 
-    
       {length > 1 && (
         <>
           <img
@@ -30,15 +29,12 @@ function Slideshow({ pictures }) {
             className="arrow left"
             onClick={prevSlide}
           />
-
           <img
             src={arrownext}
             alt="suivant"
             className="arrow right"
             onClick={nextSlide}
           />
-
-          
           <div className="slide-counter">
             {index + 1} / {length}
           </div>
@@ -47,5 +43,4 @@ function Slideshow({ pictures }) {
     </div>
   );
 }
-
 export default Slideshow;

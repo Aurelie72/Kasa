@@ -7,7 +7,6 @@ function Home() {
   return (
     <div className="home">
       <Banner />
-
       <div className="cards-container">
         {logements.map((logement) => (
           <Card className="cards"
