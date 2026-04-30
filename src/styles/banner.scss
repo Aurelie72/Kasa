@@ -29,6 +29,14 @@
 
     @media screen and (max-width: 600px) {
       font-size: 30px;
+      padding: 5px;
     }
+  }
+}
+.mobile-break {
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: inline;
   }
 }

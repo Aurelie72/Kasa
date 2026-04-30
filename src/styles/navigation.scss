@@ -4,8 +4,11 @@
     list-style: none;
     font-size: 24px;
       @media screen and (max-width: 534px) {
-    gap: 20px;
+    gap: 10px;
     font-size: smaller;
+       .nav-link {
+            text-transform: uppercase;   
+        }
     
   }
 
