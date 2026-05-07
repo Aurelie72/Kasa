@@ -20,17 +20,21 @@
   color: white;
   padding: 15px 10px;
   display: flex;
+  border-radius: 5px;
   justify-content: space-between;
   cursor: pointer;
   font-size: 24px;
+       @media (max-width: 600px) {
+    font-size: 17px;
+  }
 }
 
 &-content {
   background: #f6f6f6;
   color: black;
   padding: 0;
-  font-size: 18px;
-  border-radius: 5px;
+  font-size: 17px;
+   border-radius: 0 0 5px 5px;
 }
 }
 
@@ -44,6 +48,8 @@
 .collapse.open .collapse-content {
   max-height: 500px; 
    padding: 15px; 
+
+
 }
 .collapse-arrow {
   transition: transform 0.3s ease;
